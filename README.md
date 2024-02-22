@@ -6,9 +6,9 @@ ansible_hints
 
 Ad hoc commands default to command module. Or you can provide -m to use a moudle, e.g. ping.
 
-Check the log size of some log
+Check the log size of some log (you may need sudo for this example)
 
-``ansible all -a "sudo du -hs /var/log/some_log"``
+``ansible all -a "du -hs /var/log/some_log"``
 
 
 
