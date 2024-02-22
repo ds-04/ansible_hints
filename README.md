@@ -8,7 +8,7 @@ Ad hoc commands default to command module. Or you can provide -m to use a moudle
 
 Check the log size of some log
 
-``ansible all -a "sudo du -hs /var/log/some_log``
+``ansible all -a "sudo du -hs /var/log/some_log"``
 
 
 
