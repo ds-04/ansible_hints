@@ -14,3 +14,8 @@ Check the log size of some log (you may need sudo for this example, before the d
 
 <h1>Dictionaries and loops</h1>
 
+
+
+<h1>Limit to host range using seq</h1>
+
+``ansible-playbook playbook.yml -l $(seq -s, -f 'hostname1%03g' 01 26)``
