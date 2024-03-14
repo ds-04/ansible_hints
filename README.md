@@ -19,3 +19,11 @@ Check the log size of some log (you may need sudo for this example, before the d
 <h1>Limit to host range using seq</h1>
 
 ``ansible-playbook playbook.yml -l $(seq -s, -f 'hostname1%03g' 01 26)``
+
+<h1>Limit host range</h1>
+
+Use -l
+
+To exclude a host(s) though, use '!hostname1:!hostname2'
+
+``ansible-playbook playbook.yml -l '!hostname'``
