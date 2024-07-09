@@ -27,3 +27,26 @@ Use -l
 To exclude a host(s) though, use '!hostname1:!hostname2'
 
 ``ansible-playbook playbook.yml -l '!hostname'``
+
+
+<h1>Paramiko issue</h1>
+
+*Use at own risk*
+
+Python got updated in the OS, but no pip or paramiko
+
+```python -m ensurepip --upgrade```
+
+To ensure the installed version of pip is at least as recent as the one available in ensurepip, pass the --upgrade option
+
+Example python 3.12:
+
+```
+python3.12 -m ensurepip --upgrade
+pip3.12 install paramiko
+```
+
+
+
+
+
