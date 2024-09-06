@@ -20,6 +20,10 @@ Check the log size of some log (you may need sudo for this example, before the d
 
 ``ansible-playbook playbook.yml -l $(seq -s, -f 'hostname1%03g' 01 26)``
 
+alternatively pregenerate colon seperated listing for ``-l``
+
+`` echo node{0001..0010}|sed 's/ /:/g'``
+
 <h1>Limit host range</h1>
 
 Use -l
