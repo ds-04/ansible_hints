@@ -50,7 +50,7 @@ python3.12 -m ensurepip --upgrade
 pip3.12 install paramiko
 ```
 
-<h1></h1>
+<h1>Vault</h1>
 
 Extract var and decrypt (whole file was not encrypted, just a var)
 
