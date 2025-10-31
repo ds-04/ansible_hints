@@ -50,6 +50,17 @@ python3.12 -m ensurepip --upgrade
 pip3.12 install paramiko
 ```
 
+<h1></h1>
+
+Extract var and decrypt (whole file was not encrypted, just a var)
+
+```
+cat ansible_file.yml | yq -r ".variable_name" > tmp_file.txt
+
+ansible-vault view --ask-vault-pass tmp_file.txt
+```
+
+
 
 
 
