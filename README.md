@@ -60,7 +60,14 @@ cat ansible_file.yml | yq -r ".variable_name" > tmp_file.txt
 ansible-vault view --ask-vault-pass tmp_file.txt
 ```
 
+<h1>Local connection - controller to self</h1>
 
+Example inventory:
+
+```
+[local]
+myhost ansible_connection=local
+```
 
 
 
