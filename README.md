@@ -24,6 +24,10 @@ alternatively pregenerate colon seperated listing for ``-l``
 
 `` echo node{0001..0010}|sed 's/ /:/g'``
 
+a seq list with comma
+
+``echo scs{0001..0032} | sed 's| |,|g'``
+
 <h1>Limit host range</h1>
 
 Use -l
