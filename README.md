@@ -32,6 +32,10 @@ To exclude a host(s) though, use '!hostname1:!hostname2'
 
 ``ansible-playbook playbook.yml -l '!hostname'``
 
+In the inventory can exclude like this:
+
+```hosts: my_hosts:!~vm(8|9|10)-test```
+
 
 <h1>Paramiko issue</h1>
 
